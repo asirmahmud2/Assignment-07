@@ -27,7 +27,7 @@ export const router = createBrowserRouter([
       {
         path: "/friend/:id",
         element: <FriendDetails />,
-      },
+      }
     ],
   },
 ]);
