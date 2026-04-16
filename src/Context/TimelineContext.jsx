@@ -14,7 +14,7 @@ const TimelineProvider = ({ children }) => {
                 day: "numeric"
             })
         };
-        setTimeline(prev => [newEvent, ...prev]);
+        setTimeline([newEvent, ...timeline]);
     };
     return (
         <TimelineContext.Provider value={{ timeline, addEvent }}>

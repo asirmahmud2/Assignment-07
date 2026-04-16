@@ -39,11 +39,9 @@ const Timeline = () => {
                 {
                     filtered.map(item => (
                         <div key={item.id} className="bg-base-100 shadow rounded-xl p-4 flex items-center gap-4">
-
                             <div className="text-2xl">
                                 {getIcon(item.type)}
                             </div>
-
                             <div>
                                 <h2 className="font-semibold">
                                     {item.title}
@@ -56,6 +54,7 @@ const Timeline = () => {
                     ))
                 }
             </div>
+
 
         </div>
     );

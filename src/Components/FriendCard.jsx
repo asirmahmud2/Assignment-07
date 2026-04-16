@@ -20,13 +20,8 @@ const FriendCard = ({ friend }) => {
   return (
     <Link to={`/friend/${friend.id}`}>
       <div className="bg-base-100 shadow rounded-xl p-6 text-center cursor-pointer hover:shadow-lg transition">
-        <img
-          src={friend.picture}
-          className="w-16 h-16 rounded-full mx-auto mb-3"
-        />
-
+        <img src={friend.picture} className="w-16 h-16 rounded-full mx-auto mb-3"/>
         <h3 className="font-semibold text-lg">{friend.name}</h3>
-
         <p className="text-sm text-gray-500 mb-2">
           {friend.days_since_contact}d ago
         </p>

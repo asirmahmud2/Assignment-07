@@ -30,7 +30,10 @@ const FriendDetails = () => {
         addEvent("Video", friend.name);
         toast.success(`Video with ${friend.name} added`);
     };
-    if (!friend) return <div className="text-center py-20">Loading...</div>;
+    if (!friend) return 
+    <div className="flex justify-center py-20">
+        <span className="loading loading-spinner loading-lg"></span>
+    </div>;
 
     let statusColor = "";
     let statusText = "";
